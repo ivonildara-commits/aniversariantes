@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,900;1,900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-brand-bg: #FEFCE8; /* yellow-50 */
+  --color-brand-ink: #0F172A; /* slate-900 */
+  --color-brand-accent: #FB923C; /* orange-400 */
+  
+  --shadow-brutal-sm: 4px 4px 0px 0px rgba(0,0,0,1);
+  --shadow-brutal-lg: 8px 8px 0px 0px rgba(0,0,0,1);
+}
+
+@layer base {
+  body {
+    @apply bg-brand-bg text-brand-ink antialiased font-sans;
+  }
+}
+
+.brutal-card {
+  @apply bg-white border-4 border-brand-ink shadow-brutal-sm;
+}
+
+.brutal-input {
+  @apply w-full border-4 border-brand-ink rounded-xl p-3 focus:bg-yellow-100 outline-none transition-colors;
+}
+
+.brutal-btn {
+  @apply bg-brand-accent hover:bg-orange-500 text-white font-black py-4 rounded-2xl border-b-8 border-orange-700 active:border-b-0 active:mt-2 transition-all;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Gestor de Aniversários",
+  "description": "Sistema simples para cadastro e acompanhamento de aniversariantes com status de organização.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
